@@ -1,23 +1,16 @@
 ﻿(function ($) {
 
-    $.fn.shuffleString = function () {
+    $.fn.charCount = function () {
 
 
-        return this.each(function () {
-            $(this).text(shuffleString($(this).text()));
+        var x;
+            $("#name").keyup(function (event)
+            {
+                $("nameo").text($(this).val().length);
+            });
 
-                function shuffleString(str) {
-                    var array = str.split("");
-                    for (var index = array.length - 1; index > 0; index--) {
-                        var val = Math.floor(Math.random() * (index + 1));
-                        var temp = array[index];
-                        array[index] = array[val];
-                        array[val] = temp;
 
-                    }
-                    return array.join("");
-                }
-        })
+        return x;
     }
 
 

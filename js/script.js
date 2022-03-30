@@ -1,1 +1,1 @@
-﻿$("h1").shuffleString();
+﻿$("#nameo").charCount(document.getElementById("name").value);
